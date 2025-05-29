@@ -17,9 +17,12 @@ Flags overly permissive IAM policies and missing root MFA
 Finds open EC2 ports (SSH/RDP) accessible to the public
 Stores all findings in a DynamoDB table (CloudSecurityFindings)
 Ready to deploy as AWS Lambda functions
+Real-time alerting via AWS EventBridge and Lambda triggers
+
 Requirements Install required dependencies: pip install -r requirements.txt
 
-Deployment Each script can be zipped and deployed as a standalone AWS Lambda. Ensure: The Lambda IAM role has: AmazonDynamoDBFullAccess AmazonS3ReadOnlyAccess IAMReadOnlyAccess
+Deployment Each script can be zipped and deployed as a standalone AWS Lambda.
+Ensure: The Lambda IAM role has: AmazonDynamoDBFullAccess AmazonS3ReadOnlyAccess IAMReadOnlyAccess
 
 DynamoDB table CloudSecurityFindings is created in your target AWS region
 
