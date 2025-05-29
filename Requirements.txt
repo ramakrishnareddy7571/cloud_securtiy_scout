@@ -1,0 +1,2 @@
+boto3 – AWS SDK for Python used to interact with AWS services like S3, IAM, and DynamoDB.
+
